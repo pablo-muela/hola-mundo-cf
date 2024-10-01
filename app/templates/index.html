@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Bootcamp DevOps - Codigo Facilito</h1>
+    <div style="text-align: center;">
+        <img src="https://codigofacilito.com/assets/codys/programando-circle-83a5c0c48b92a40090f4d46f1b28b026630dd9ee8e51769cf223e53ca3eb32cb.png" alt="Codigo Facilito" width="150" height="150">
+    </div>
+    <h1>Linkedin Profile</h1>
+    <ul>
+        {% for person in people %}
+            <li>
+                <strong>{{ person.name }}</strong> - 
+                <a href="https://www.linkedin.com/in/{{ person.linkedin }}" target="_blank">
+                    LinkedIn Profile
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+    <footer>
+        <p>&copy; 2024 by Roxs</p>
+    </footer>
+</body>
+</html>
