@@ -84,6 +84,7 @@ python app.py
 
 5. Abre tu navegador web y ve a `http://localhost:5000` para ver la aplicación en funcionamiento.
 
+
 ## Estructura del Proyecto
 
 ```plaintext
@@ -100,4 +101,8 @@ app
     └── test_app.py
 ```
 
+6. correr los test
 
+```bash
+PYTHONPATH=. pytest tests/test_app.py
+``
