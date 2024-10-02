@@ -2,6 +2,8 @@
 
 Este es un proyecto de ejemplo en Python que muestra cómo crear una lista de personas y sus perfiles de LinkedIn.
 
+![](./1.png)
+
 ## Descripción
 
 El proyecto consiste en una aplicación web simple que muestra una lista de personas y sus perfiles de LinkedIn. Utiliza Flask como framework web y HTML/CSS para la interfaz de usuario.
